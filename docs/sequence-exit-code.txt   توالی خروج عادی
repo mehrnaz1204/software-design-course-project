@@ -1,0 +1,31 @@
+@startuml
+
+actor "راننده" as Driver
+actor "اپراتور ورودی" as EntryOperator
+
+participant "سیستم" as System
+participant "دوربین" as Camera
+participant "سامانه پلیس" as Police
+database "خودروهای مجاز" as DB
+database "سوابق تردد" as TrafficDB
+
+Driver -> System : درخواست ورود
+
+System -> Camera : خواندن پلاک
+Camera --> System : ارسال پلاک
+
+System -> Police : استعلام وضعیت پلاک
+Police --> System : مجاز
+
+System -> DB : بررسی مجوز خودرو
+DB --> System : تأیید مجوز
+
+System -> EntryOperator : درخواست تأیید ورود
+EntryOperator --> System : تأیید ورود
+
+System -> TrafficDB : ثبت زمان ورود
+TrafficDB --> System : ذخیره شد
+
+System -> Driver : اجازه ورود
+
+@enduml
