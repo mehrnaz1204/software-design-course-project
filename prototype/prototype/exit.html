@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خروج خودرو و پرداخت</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container form-page">
+    <h1>خروج خودرو و پرداخت</h1>
+    <div class="form-box">
+      <label>شماره پلاک</label>
+      <input id="exitPlate" type="text" placeholder="مثال: 123ABC" />
+
+      <div class="actions">
+        <button onclick="calculateFee()">محاسبه هزینه</button>
+        <button onclick="payFee()">پرداخت</button>
+      </div>
+
+      <div id="feeResult" class="result"></div>
+    </div>
+
+    <a class="back-link" href="index.html">بازگشت به صفحه اصلی</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
