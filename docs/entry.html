@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ثبت ورود</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">🚗</div>
+        <div><h2>VACS</h2><p>Vehicle Access Control System</p></div>
+      </div>
+
+      <div class="menu-title">Main</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html">📊 Dashboard</a>
+        <a class="menu-item" href="owners.html">👤 Owners</a>
+        <a class="menu-item" href="vehicles.html">🚘 Vehicles</a>
+        <a class="menu-item" href="barriers.html">🚧 Barriers</a>
+        <a class="menu-item" href="cameras.html">📷 Cameras</a>
+        <a class="menu-item" href="permissions.html">🔐 Access Permissions</a>
+        <a class="menu-item" href="logs.html">📝 Access Logs</a>
+      </nav>
+
+      <div class="menu-title">Operations</div>
+      <nav class="menu">
+        <a class="menu-item active" href="entry.html">🟢 ثبت ورود</a>
+        <a class="menu-item" href="exit.html">🟠 خروج و پرداخت</a>
+        <a class="menu-item" href="emergency.html">🔴 خروج اضطراری</a>
+        <a class="menu-item" href="report.html">📄 گزارش نهایی</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>ثبت ورود خودرو</h1>
+          <p>ثبت اطلاعات راننده و خودرو برای ورود به مجموعه</p>
+        </div>
+      </header>
+
+      <section class="form-card">
+        <label for="entryPlate">پلاک خودرو</label>
+        <input type="text" id="entryPlate" placeholder="مثلاً 12الف345">
+
+        <label for="entryOwner">نام راننده / مالک</label>
+        <input type="text" id="entryOwner" placeholder="مثلاً علی رضایی">
+
+        <label for="entryVehicle">نوع خودرو</label>
+        <input type="text" id="entryVehicle" placeholder="مثلاً سواری">
+
+        <label for="entryGate">دروازه ورود</label>
+        <input type="text" id="entryGate" placeholder="مثلاً ورودی اصلی">
+
+        <div class="button-row">
+          <button onclick="checkEntryPlate()">بررسی مجوز</button>
+          <button onclick="registerEntry()">ثبت ورود</button>
+        </div>
+
+        <div id="entryResult" class="result-box">نتیجه عملیات اینجا نمایش داده می‌شود.</div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
