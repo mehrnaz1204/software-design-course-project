@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Permissions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">🚗</div>
+        <div><h2>VACS</h2><p>Vehicle Access Control System</p></div>
+      </div>
+
+      <div class="menu-title">Main</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html">📊 Dashboard</a>
+        <a class="menu-item" href="owners.html">👤 Owners</a>
+        <a class="menu-item" href="vehicles.html">🚘 Vehicles</a>
+        <a class="menu-item" href="barriers.html">🚧 Barriers</a>
+        <a class="menu-item" href="cameras.html">📷 Cameras</a>
+        <a class="menu-item active" href="permissions.html">🔐 Access Permissions</a>
+        <a class="menu-item" href="logs.html">📝 Access Logs</a>
+      </nav>
+
+      <div class="menu-title">Operations</div>
+      <nav class="menu">
+        <a class="menu-item" href="entry.html">🟢 ثبت ورود</a>
+        <a class="menu-item" href="exit.html">🟠 خروج و پرداخت</a>
+        <a class="menu-item" href="emergency.html">🔴 خروج اضطراری</a>
+        <a class="menu-item" href="report.html">📄 گزارش نهایی</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>Access Permissions</h1>
+          <p>مدیریت سطح دسترسی خودروها و مالکان</p>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header"><h2>Permissions</h2></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>پلاک</th>
+                <th>مالک</th>
+                <th>نوع مجوز</th>
+                <th>اعتبار</th>
+                <th>وضعیت</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>12الف345</td><td>علی رضایی</td><td>دائمی</td><td>نامحدود</td><td><span class="badge success">فعال</span></td></tr>
+              <tr><td>65ب678</td><td>مریم احمدی</td><td>موقت</td><td>1405/05/10</td><td><span class="badge info">در حال اعتبار</span></td></tr>
+              <tr><td>88ج901</td><td>حسین محمدی</td><td>موقت</td><td>1405/04/15</td><td><span class="badge warning">نیازمند تمدید</span></td></tr>
+              <tr><td>44د222</td><td>زهرا کریمی</td><td>دائمی</td><td>نامحدود</td><td><span class="badge success">فعال</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
