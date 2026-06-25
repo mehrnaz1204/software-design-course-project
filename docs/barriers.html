@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barriers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">🚗</div>
+        <div><h2>VACS</h2><p>Vehicle Access Control System</p></div>
+      </div>
+
+      <div class="menu-title">Main</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html">📊 Dashboard</a>
+        <a class="menu-item" href="owners.html">👤 Owners</a>
+        <a class="menu-item" href="vehicles.html">🚘 Vehicles</a>
+        <a class="menu-item active" href="barriers.html">🚧 Barriers</a>
+        <a class="menu-item" href="cameras.html">📷 Cameras</a>
+        <a class="menu-item" href="permissions.html">🔐 Access Permissions</a>
+        <a class="menu-item" href="logs.html">📝 Access Logs</a>
+      </nav>
+
+      <div class="menu-title">Operations</div>
+      <nav class="menu">
+        <a class="menu-item" href="entry.html">🟢 ثبت ورود</a>
+        <a class="menu-item" href="exit.html">🟠 خروج و پرداخت</a>
+        <a class="menu-item" href="emergency.html">🔴 خروج اضطراری</a>
+        <a class="menu-item" href="report.html">📄 گزارش نهایی</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>Barriers</h1>
+          <p>وضعیت موانع ورودی و خروجی</p>
+        </div>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><div class="stat-icon">🚧</div><div><div class="stat-number">4</div><div class="stat-label">Total Barriers</div></div></div>
+        <div class="stat-card"><div class="stat-icon">🟢</div><div><div class="stat-number">3</div><div class="stat-label">Online</div></div></div>
+        <div class="stat-card"><div class="stat-icon">🔴</div><div><div class="stat-number">1</div><div class="stat-label">Offline</div></div></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header"><h2>Barrier Status</h2></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>نام مانع</th>
+                <th>موقعیت</th>
+                <th>وضعیت</th>
+                <th>آخرین عملیات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Barrier 1</td><td>ورودی اصلی</td><td><span class="badge success">فعال</span></td><td>08:25 باز شد</td></tr>
+              <tr><td>Barrier 2</td><td>خروجی 1</td><td><span class="badge success">فعال</span></td><td>09:10 بسته شد</td></tr>
+              <tr><td>Barrier 3</td><td>ورودی VIP</td><td><span class="badge success">فعال</span></td><td>10:40 باز شد</td></tr>
+              <tr><td>Barrier 4</td><td>خروج اضطراری</td><td><span class="badge warning">غیرفعال</span></td><td>نیازمند بررسی</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
