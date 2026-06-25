@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Logs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">🚗</div>
+        <div><h2>VACS</h2><p>Vehicle Access Control System</p></div>
+      </div>
+
+      <div class="menu-title">Main</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html">📊 Dashboard</a>
+        <a class="menu-item" href="owners.html">👤 Owners</a>
+        <a class="menu-item" href="vehicles.html">🚘 Vehicles</a>
+        <a class="menu-item" href="barriers.html">🚧 Barriers</a>
+        <a class="menu-item" href="cameras.html">📷 Cameras</a>
+        <a class="menu-item" href="permissions.html">🔐 Access Permissions</a>
+        <a class="menu-item active" href="logs.html">📝 Access Logs</a>
+      </nav>
+
+      <div class="menu-title">Operations</div>
+      <nav class="menu">
+        <a class="menu-item" href="entry.html">🟢 ثبت ورود</a>
+        <a class="menu-item" href="exit.html">🟠 خروج و پرداخت</a>
+        <a class="menu-item" href="emergency.html">🔴 خروج اضطراری</a>
+        <a class="menu-item" href="report.html">📄 گزارش نهایی</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>Access Logs</h1>
+          <p>سوابق ورود و خروج ثبت‌شده توسط سیستم</p>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header"><h2>Recent Logs</h2></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>زمان</th>
+                <th>پلاک</th>
+                <th>نام مالک</th>
+                <th>نوع رویداد</th>
+                <th>دروازه</th>
+                <th>وضعیت</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>08:25</td><td>12الف345</td><td>علی رضایی</td><td>ورود</td><td>ورودی اصلی</td><td><span class="badge success">مجاز</span></td></tr>
+              <tr><td>09:10</td><td>65ب678</td><td>مریم احمدی</td><td>خروج</td><td>خروجی 1</td><td><span class="badge info">پرداخت شد</span></td></tr>
+              <tr><td>10:05</td><td>88ج901</td><td>حسین محمدی</td><td>خروج اضطراری</td><td>Emergency Gate</td><td><span class="badge warning">جریمه</span></td></tr>
+              <tr><td>10:40</td><td>44د222</td><td>زهرا کریمی</td><td>ورود</td><td>ورودی VIP</td><td><span class="badge success">مجاز</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
