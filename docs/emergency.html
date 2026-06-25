@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خروج اضطراری</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">🚗</div>
+        <div><h2>VACS</h2><p>Vehicle Access Control System</p></div>
+      </div>
+
+      <div class="menu-title">Main</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html">📊 Dashboard</a>
+        <a class="menu-item" href="owners.html">👤 Owners</a>
+        <a class="menu-item" href="vehicles.html">🚘 Vehicles</a>
+        <a class="menu-item" href="barriers.html">🚧 Barriers</a>
+        <a class="menu-item" href="cameras.html">📷 Cameras</a>
+        <a class="menu-item" href="permissions.html">🔐 Access Permissions</a>
+        <a class="menu-item" href="logs.html">📝 Access Logs</a>
+      </nav>
+
+      <div class="menu-title">Operations</div>
+      <nav class="menu">
+        <a class="menu-item" href="entry.html">🟢 ثبت ورود</a>
+        <a class="menu-item" href="exit.html">🟠 خروج و پرداخت</a>
+        <a class="menu-item active" href="emergency.html">🔴 خروج اضطراری</a>
+        <a class="menu-item" href="report.html">📄 گزارش نهایی</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>خروج اضطراری</h1>
+          <p>ثبت خروج اضطراری، دلیل خروج و جریمه</p>
+        </div>
+      </header>
+
+      <section class="form-card">
+        <label for="emergencyPlate">پلاک خودرو</label>
+        <input type="text" id="emergencyPlate" placeholder="مثلاً 88ج901">
+
+        <label for="emergencyOwner">نام راننده / مالک</label>
+        <input type="text" id="emergencyOwner" placeholder="مثلاً حسین محمدی">
+
+        <label for="emergencyReason">دلیل خروج اضطراری</label>
+        <input type="text" id="emergencyReason" placeholder="مثلاً خرابی خودرو / وضعیت فوری">
+
+        <div class="button-row">
+          <button onclick="approveEmergency()">تأیید خروج اضطراری</button>
+          <button onclick="registerEmergencyFine()">ثبت جریمه</button>
+        </div>
+
+        <div id="emergencyResult" class="result-box">نتیجه عملیات اینجا نمایش داده می‌شود.</div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
