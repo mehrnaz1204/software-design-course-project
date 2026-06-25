@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خروج و پرداخت</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">🚗</div>
+        <div><h2>VACS</h2><p>Vehicle Access Control System</p></div>
+      </div>
+
+      <div class="menu-title">Main</div>
+      <nav class="menu">
+        <a class="menu-item" href="index.html">📊 Dashboard</a>
+        <a class="menu-item" href="owners.html">👤 Owners</a>
+        <a class="menu-item" href="vehicles.html">🚘 Vehicles</a>
+        <a class="menu-item" href="barriers.html">🚧 Barriers</a>
+        <a class="menu-item" href="cameras.html">📷 Cameras</a>
+        <a class="menu-item" href="permissions.html">🔐 Access Permissions</a>
+        <a class="menu-item" href="logs.html">📝 Access Logs</a>
+      </nav>
+
+      <div class="menu-title">Operations</div>
+      <nav class="menu">
+        <a class="menu-item" href="entry.html">🟢 ثبت ورود</a>
+        <a class="menu-item active" href="exit.html">🟠 خروج و پرداخت</a>
+        <a class="menu-item" href="emergency.html">🔴 خروج اضطراری</a>
+        <a class="menu-item" href="report.html">📄 گزارش نهایی</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>خروج خودرو و پرداخت</h1>
+          <p>محاسبه هزینه توقف و ثبت خروج خودرو</p>
+        </div>
+      </header>
+
+      <section class="form-card">
+        <label for="exitPlate">پلاک خودرو</label>
+        <input type="text" id="exitPlate" placeholder="مثلاً 12الف345">
+
+        <label for="exitOwner">نام راننده / مالک</label>
+        <input type="text" id="exitOwner" placeholder="مثلاً علی رضایی">
+
+        <label for="exitHours">مدت توقف (ساعت)</label>
+        <input type="number" id="exitHours" placeholder="مثلاً 3">
+
+        <div class="button-row">
+          <button onclick="calculateExitFee()">محاسبه هزینه</button>
+          <button onclick="payAndExit()">پرداخت و ثبت خروج</button>
+        </div>
+
+        <div id="exitResult" class="result-box">نتیجه عملیات اینجا نمایش داده می‌شود.</div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
